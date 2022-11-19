@@ -1,0 +1,49 @@
+.beatsAndKim {
+  width: 100%;
+  height: 877px;
+  background-image: url("../../assets/images/kimBg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 180px 0;
+  padding-bottom: 146px;
+}
+.beatsAndKim__container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.beatsAndKim__textBlock {
+  color: #fff;
+}
+.beatsAndKim__title {
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 22px;
+}
+.beatsAndKim__text {
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 22px;
+}
+.beatsAndKim__btn {
+  background: #fff;
+  border: none;
+  color: #BF896F;
+  padding: 15px 57px;
+  font-weight: 700;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+@media(max-width: 800px) {
+  .beatsAndKim {
+    margin-top: 54px;
+    height: 234px;
+  }
+  .beatsAndKim__container {
+    display: none;
+  }
+}

@@ -1,0 +1,158 @@
+.footer {
+   margin-top: 180px;
+   border-top: 1px solid #FFFFFF;
+
+}
+
+.footer__main {
+   display: flex;
+   justify-content: space-between;
+   color: #fff;
+   padding: 180px 0 125px;
+   gap: 150px;
+
+}
+
+.footer__about{
+   max-width: 320px;
+}
+
+.footer__logoImg {
+   width: 208px;
+   object-fit: contain;
+   margin-bottom: 30px;
+}
+
+.footer__text {
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 30px;
+}
+
+.footer__subscribeBlock {
+   max-width: 560px;
+}
+.footer__subscribeText {
+   margin-bottom: 30px;
+}
+
+.footer__subscribeForm {
+   display: flex;
+   gap: 40px;
+   align-items: center;
+}
+
+.footer__subscribeInput {
+   border-radius: 8px;
+   border: none;
+   background: #fff;
+   padding: 19px 11px 11px;
+   color: rgba(0, 0, 0, 0.4);
+   font-weight: 300;
+   font-size: 20px;
+}
+
+.footer__contactBlock {
+   display: flex;
+   justify-content: space-between;
+   gap: 150px;
+}
+
+.footer__title {
+   font-weight: 700;
+   font-size: 20px;
+   margin-bottom: 30px;
+}
+
+
+.footer__socIcons {
+   display: flex;
+   align-items: center;
+   gap: 12px;
+}
+
+.footer__callBlockText {
+   white-space: nowrap;
+}
+
+.footer__links {
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   border-top: 1px solid #fff;
+   padding: 17px 0 20px;
+   gap: 40px;
+} 
+.footer__LinksItem {
+   color: #fff;
+   text-decoration: none;
+   font-weight: 300;
+   font-size: 16px;
+}
+
+
+.footer__LinksItem_left {
+   margin-right: auto;
+} 
+.footer__LinksItem_mob {
+   display: none;
+}
+
+@media (max-width: 1600px) {
+   .footer__main,
+   .footer__contactBlock {
+      gap: 50px;
+   }
+}
+
+@media (max-width: 1200px) {
+   .footer__links {
+      justify-content: space-between;
+   }
+   .footer__main {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+   .footer__subscribeForm {
+      justify-content: center;
+   }
+   .footer__LinksItem:not(.footer__LinksItem_mob) {
+      display: none;
+   }
+   .footer__LinksItem_mob {
+      display: block;
+   }
+}
+
+@media (max-width: 800px) {
+   .footer {
+      margin-top: 52px;
+   }
+   .footer__main {
+      padding: 80px 0 90px;
+      gap: 62px;
+   }
+
+   .footer__about {
+      max-width: 270px;
+   }
+
+   .footer__logoImg {
+      margin-bottom: 18px;
+   }
+   .footer__contactBlock {
+      gap: 20px;
+   }
+   .footer__subscribeForm {
+      flex-direction: column;
+   }
+   .footer__subscribeInput {
+      width: 100%;
+   }
+   .footer__title,
+   .footer__text,
+   .footer__subscribeInput {
+      font-size: 16px;
+   }
+}

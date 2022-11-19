@@ -1,0 +1,138 @@
+.header {
+    background-image: url("../../assets/images/headerBg.png");
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: 60%;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+    gap: 110px;
+}
+
+.header__textBlock {
+    max-width: 550px;
+    width: 100%;
+}
+
+.header__title {
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 81px;
+    color: #0C132E;
+}
+
+.header__btn {
+    margin-top: 40px;
+}
+
+.header__span {
+    background-image: url('../../assets/images/span.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    padding-right: 10px;
+    padding-bottom: 15px;
+}
+
+.header__imgBlock {
+    width: 100%;
+    padding: 115px 0 165px 170px;
+    display: flex;
+    align-items: center;
+}
+
+.header__userImg {
+    margin: 0 -26% 0 -10%;
+    z-index: 2;
+}
+
+.header__phoneImg {
+    width: 60%;
+    object-fit: contain;
+    z-index: 1;
+}
+
+.header__headphoneImg {
+    object-fit: contain;
+    z-index: 0;
+    width: 50%;
+    animation: scale 4s linear infinite;
+
+}
+
+.header__mobImgBlock{
+    display: none;
+    align-self: flex-end;
+    margin-bottom: 92px;
+}
+
+@media (max-width: 1600px) {
+    .header {
+        background-size: 45%;
+    }
+
+    .header__userImg {
+        width: 150px;
+        margin: 0 -31% 0 -15%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .header {
+        background-position: right 445px;
+        background-size: contain;
+    }
+    .header__userImg {
+        display: none;
+    }
+    .header__mobImgBlock{
+        display: block;
+    }
+    .header__headphoneImg {
+        margin-left: -47px;
+    }
+
+    .header__container {
+        flex-direction: column;
+        gap: 53px;
+    }
+
+    .header__imgBlock {
+        padding: 0;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .header {
+        background-size: 100%;
+        background-position: right 245px;
+    }
+
+    .header__title {
+        font-size: 36px;
+        line-height: 54px;
+        margin-bottom: 20px;
+    }
+
+    .header__btn {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .header__headphoneImg {
+        margin-left: -27px;
+    }
+}
+
+
+@keyframes scale {
+    0%{transform: scale(1)}
+    50%{transform: scale(0.6)}
+    0%{transform: scale(1)}
+
+}

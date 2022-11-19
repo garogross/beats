@@ -1,0 +1,128 @@
+.selectColor__title {
+    margin-bottom: 80px;
+}
+
+.selectColor__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 223px;
+}
+
+.selectColor__imgBlock {
+    width: 100%;
+}
+
+.selectColor__img {
+    width: 100%;
+    display: none;
+}
+
+.selectColor__img_active {
+    display: block;
+}
+
+.selectColor__textBlock {
+    width: 100%;
+    color: #0C132E;
+}
+
+.selectColor__productName {
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 13px;
+}
+
+.selectColor__productPrice {
+    font-weight: 500;
+    font-size: 30px;
+
+}
+
+.selectColor__list {
+    list-style: none;
+    margin: 54px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+.selectColor__colorBlock {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.selectColor__colorText {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 45px;
+
+}
+
+.selectColor__colorSelects {
+    display: flex;
+    gap: 20px;
+}
+
+.selectColor__colorSelectItem {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.selectColor__colorSelectItem.black {
+    background: #000;
+}
+
+.selectColor__colorSelectItem.white {
+    background: #fff;
+}
+
+.selectColor__colorSelectItem.green {
+    background: #444444;
+}
+
+.selectColor__colorSelectItem.blue {
+    background: #2B3E8A;
+}
+
+@media (max-width: 1200px) {
+    .selectColor__wrapper {
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+
+@media (max-width: 800px) {
+    .selectColor__title {
+        display: none;
+    }
+
+    .selectColor__productName,
+    .selectColor__productPrice {
+        font-size: 20px;
+    }
+    .selectColor__productName {
+        margin-bottom: 20px
+    }
+    .selectColor__list {
+        margin: 20px 0 30px;
+        gap: 14px;
+    }
+    .selectColor__colorBlock {
+        margin-bottom: 30px;
+    }
+    .selectColor__colorText {
+        font-size: 20px
+    }
+    .selectColor__colorSelectItem {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+;

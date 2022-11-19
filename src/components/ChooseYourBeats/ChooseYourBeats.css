@@ -1,0 +1,48 @@
+.chooseYourBeats {
+   padding-top: 180px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 150px;
+
+}
+
+.chooseYourBeats__textBlock {
+   max-width: 690px;
+   width: 100%;
+}
+
+.chooseYourBeats__title {
+   margin-bottom: 54px;
+}
+.chooseYourBeats__titleMob {
+   margin-bottom: 22px;
+   display: none;
+}
+.chooseYourBeats__imgBlock {
+   width: 100%;
+}
+
+.chooseYourBeats__cardImg {
+   width: 100%;
+}
+
+@media (max-width: 1200px) {
+   .chooseYourBeats {
+      gap: 50px;
+   }
+}
+
+@media (max-width: 800px) {
+   .chooseYourBeats {
+      padding-top: 54px;
+      gap: 40px;
+      flex-direction: column-reverse;
+   }
+   .chooseYourBeats__title{
+      display: none;
+   }
+   .chooseYourBeats__titleMob {
+      display: block;
+   }
+}

@@ -1,0 +1,17 @@
+.defaultButton {
+    background: linear-gradient(90deg, #95F9C3 2.35%, #73C9AC 18.63%, #509995 39.99%, #2E687D 67.45%, #0B3866 100%);
+    border: none;
+    color: #fff;
+    padding: 15px 57px;
+    font-weight: 700;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+@media (max-width: 800px) {
+    .defaultButton {
+        width: 100%;
+        text-align: center
+    }
+}
